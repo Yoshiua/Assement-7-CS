@@ -1,0 +1,48 @@
+Results for the extraLargeArray
+insert 954.6396 ms
+append 2.7952 ms
+
+
+
+Array:			Insert Time:	Append Time:
+
+tinyArray		32.4 μs		73.3 μs
+
+smallArray		46.4 μs		97.4 μs
+
+MediumArray		167.1 μs	134.8 μs
+
+largeArray		7.564 ms	506.5 μs
+
+extraLargeArray		923.5483 ms	2.609 ms
+
+
+
+
+
+// Read over the results, and write a paragraph that explains the pattern you see:
+
+In these results the first 2 smaller arrays are slightly faster for Insert Time and the mediumArray is slightly faster for Append Time.
+3 smaller arrays are comperable on speed with a difference of microseconds in speed, but once we get to large arrays this changes.
+In both largeArray and extraLargeArray the Append time is much faster 15x Faster for the Large and over 350x faster for the extraLarge.
+
+
+//How does each function “scale”?
+
+The Insert function that uses a .unshift method dose not scale well with arrays because for each exisiting element in the array it shifts them all forward
+to make room for the new elemnt at the front.
+
+The Append function uses a .push method that simply add the new element to the end of the array.
+
+
+//Which of the two functions scales better?
+
+The Append funcction that uses .push scalse much better than the Insert function that uses .unshift.
+
+
+//How can you tell?
+
+Because the longer the array gets the more items the .unshift method will have to move forward where as 
+the .push method always just adds to the end without rearranging the existing array.
+
+
