@@ -12,6 +12,7 @@ function addToZero(arr) {
 // console.log(addToZero(testArray))
 
 //Runtime Guess = 0(n2) Because it has a nested loop
+//O(1) Space
 
 
 function hasUniqueChars(str) {
@@ -27,6 +28,7 @@ function hasUniqueChars(str) {
 // console.log(hasUniqueChars("Monday"));
 
 //Runtime Guess = 0(n2) Because it has a nested loop
+//O(1) Space
 
 
 //I also came across a method that would be an O(n) solution and also seemed to work
@@ -48,6 +50,7 @@ function isPangram(str) {
 // console.log(isPangram("The quick brown fox jumps over the lazy dog"));
 
 //Runtime Guess = 0(n) Because its just one loop
+//O(1) Space
 
 
 function findLogestWord(arr) {
@@ -62,3 +65,4 @@ function findLogestWord(arr) {
 // console.log(findLogestWord(["Hi", "Hello", "Whats up?", "Howdddddddy", "Yo"]));
 
 //Runtime Guess = 0(n) Because its just a loop again
+//O(1) Space
